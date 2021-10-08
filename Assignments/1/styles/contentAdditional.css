@@ -7,6 +7,10 @@
     display: block;
 }
 
+#content p {
+    display: block;
+}
+
 img.left {
     margin-right: 10px;
     float: left;
@@ -19,4 +23,24 @@ img.right {
 
 img.small {
     max-width: 100px;
+}
+
+img.medium {
+    max-width: 150px;
+}
+
+img.big {
+    max-width: 200px;
+}
+
+p.left {
+    clear: left;
+}
+
+p.right {
+    clear: right;
+}
+
+p.both {
+    clear: both;
 }

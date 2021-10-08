@@ -1,0 +1,62 @@
+/* Text */
+.paragraph {
+    background-color: #FFF;
+}
+
+#content > p {
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-style: oblique;
+}
+
+.centered {
+    vertical-align: top;
+    padding-left: 10px;
+}
+
+
+/* Additional */
+#content ul li {
+    list-style: lower-greek;
+}
+
+ol > li {
+    margin-bottom: 5px;
+}
+
+
+/* Tables */
+table
+{
+    border-collapse: collapse !important;
+}
+
+td {
+    padding: 3px;
+}
+
+tr > th {
+    padding: 2px 10px;
+    border: 2px solid #000;
+}
+
+#table1 td {
+    border: 1px dotted #000;
+}
+
+table#table2 td {
+    display: inline-block
+}
+
+#table2 {
+    margin-top: 10px;
+}
+
+#table2 tr {
+    border: 2px solid #8DA399;
+}
+
+#table2 td {
+    border-spacing: 10px;
+}

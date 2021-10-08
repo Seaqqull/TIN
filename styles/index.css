@@ -10,6 +10,15 @@ a {
     color: #CC397B;
 }
 
+/* Content */
+#content {
+    padding: 5px;
+}
+
+#content p {
+    text-align: justify;
+}
+
 /* Navigation */
 ul#navigation {
     background-color: #323232;
@@ -18,6 +27,7 @@ ul#navigation {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 
 ul#navigation li {

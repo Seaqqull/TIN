@@ -1,0 +1,22 @@
+#content {
+    column-count: 2;
+    column-gap: 100px;
+    column-rule-style: solid;
+    column-rule-color: #323232;
+    height: 100% !important;
+    display: block;
+}
+
+img.left {
+    margin-right: 10px;
+    float: left;
+}
+
+img.right {
+    margin-left: 10px;
+    float: right;
+}
+
+img.small {
+    max-width: 100px;
+}

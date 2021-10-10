@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../styles/index.css">
+
+    <title> Lab 2 </title>
+</head>
+<body>
+    <header>
+        <p class="bigText pageTitle"> Assignment A & B</p>
+        <ul id="navigation">
+            <li><a href="#current" class="active">Assignment A & B</a></li>
+            <li><a href="additional.html">Assignment C</a></li>
+            <li style="float:right !important;"><a href="../../index.html">Main page</a></li>
+        </ul>
+    </header>
+
+    <div id="content">
+        <form action="" method="get" class="ownForm" name="user">
+            <fieldset>
+                <legend>General information</legend>
+                <div class="ownForm">
+                    <label for="name">Enter your name: </label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="ownForm">
+                    <label for="name">Birth year: </label>
+                    <select name="birthYear" id="birthYear">
+                        <option value="1995">1995</option>
+                        <option value="1996">1996</option>
+                        <option value="1997">1997</option>
+                        <option value="1998">1998</option>
+                        <option value="1999">1999</option>
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                    </select>
+                </div>
+                <div class="ownForm">
+                    <p>Sex: </p>
+                    <div>
+                        <label for="male">Male</label>
+                        <input type="radio" name="sex" id="male" value="Male" required>
+                    </div>
+                    <div>
+                        <label for="female">Female</label>
+                        <input type="radio" name="sex" id="female" value="Female" required>
+                    </div>
+                    <div>
+                        <label for="other">Other</label>
+                        <input type="radio" name="sex" id="other" value="Other" required>
+                    </div>
+                </div>
+                <div class="ownForm">
+                    <p>Interests:</p>
+                    <div>
+                        <label for="game"> Games </label>
+                        <input type="checkbox" name="game" id="game">
+                    </div>
+                    <div>
+                        <label for="book"> Books </label>
+                        <input type="checkbox" name="book" id="book">
+                    </div>
+                </div>
+                <div class="ownForm">
+                    <label for="about">Short description about yourself: </label>
+                    <textarea rows="5" cols="30" name="about" id="about"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend> Private information </legend>
+                <div class="ownForm">
+                    <label for="password">Enter your password: </label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="ownForm">
+                  <label for="email">Enter your email: </label>
+                  <input type="email" name="email" id="email" required>
+                </div>
+            </fieldset>
+
+            <div class="ownForm">
+              <input type="reset">
+              <input type="submit" value="Send">
+            </div>
+        </form>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p> PJATK TIN 2021&copy; </p>
+    </footer>
+</body>
+</html>

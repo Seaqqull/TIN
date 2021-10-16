@@ -1,0 +1,76 @@
+form.ownForm, div.ownForm  {
+    display: table;
+}
+
+div.buttons {
+    padding: 5px 3px;
+}
+
+.block {
+    display: block;
+}
+
+.important > label, p.important {
+    color: red;
+    border-radius: 4px;
+}
+
+input[type=submit], input[type=reset] {
+    color: #FFF;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    float: right;
+}
+
+input[type=reset] {
+    background-color: #FF0038;
+    float: left;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=reset]:hover {
+    background-color: #E40031;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    margin-top: 20px;
+}
+
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+legend {
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+div.ownForm .label-title {
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-35 {
+    float: left;
+    width: 35%;
+    margin-top: 6px;
+}
+

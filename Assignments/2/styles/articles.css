@@ -1,0 +1,66 @@
+#assignment-logo > img{
+    max-width: 100%;
+    max-height: 200px;
+    margin: 0 auto;
+    display: block;
+    border: 5px solid #FEC89A;
+}
+
+.article-row {
+    padding: 0px 20px 40px 20px;
+}
+
+.article-logo > img {
+    max-height: 48px;
+}
+
+.article-header {
+    width: 100%;
+    padding: auto;
+    display: inline-block;
+    border-bottom: 5px dotted #FCD5CE;
+}
+
+.article-header > div:first-child {
+    float: left;
+    margin: 0 auto;
+}
+
+.article-header > div:last-child {
+    float: left;
+    margin: 0 0 0 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    max-height: 48px;
+}
+
+
+.article-content {
+    background: #FFD7BA;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 3px 0 0 10px;
+    border: 2px solid #323232;
+}
+
+.article-content p {
+    margin: 0;
+    padding: 0;
+}
+
+.article-content a {
+    color: #48BFE3;
+}
+
+.article-content a:hover {
+    color: #7B2CBF;
+}
+
+#content {
+    background-color: #FBFBFB;
+    min-width: 450px;
+}
+
+header {
+    min-width: 450px;
+}

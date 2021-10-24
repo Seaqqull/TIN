@@ -1,0 +1,124 @@
+
+
+#content {
+    display: grid;
+    grid-template-areas:
+    "header header header header header"
+    "gallery column1 column2 column3 column4"
+    "footer footer footer footer footer";
+    grid-gap: 10px;
+    /*background-color: #2196F3;*/
+}
+
+.gallery { grid-area: gallery; }
+.header { grid-area: header; }
+.item1 { grid-area: column1; }
+.item2 { grid-area: column2; }
+.item3 { grid-area: column3; }
+.item4 { grid-area: column4; }
+.footer { grid-area: footer; }
+
+header > img {
+    transform: rotate(5deg);
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px 0 black;
+    border: 2px solid black;
+    border-top: 0;
+    border-left: 0;
+}
+
+#content > div, #content > header {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+}
+
+#content > header p {
+    text-align: center;
+    font-size: 30px;
+}
+
+#content > div {
+    padding: 15px;
+}
+#content > div p {
+    margin: 0;
+    text-align: justify !important;
+}
+
+.gallery img {
+    max-width: 250px;
+}
+
+.gallery figure {
+    margin: 0 0 50px 0;
+}
+
+/* Images */
+img.left {
+    margin-right: 10px;
+    float: left;
+}
+
+img.right {
+    margin-left: 10px;
+    float: right;
+}
+
+img.small {
+    max-width: 100px;
+}
+
+div.left {
+    margin: 10px 10px 10px 0;
+    float: left;
+}
+
+div.right {
+    margin: 10px 0 10px 10px;
+    float: right;
+}
+
+.quotes {
+    color: #EB4C42;
+    font-style: italic;
+    font-size: medium;
+    text-align: justify !important;
+}
+
+/* Media */
+
+@media all and (max-width: 1200px) {
+    #content {
+        grid-template-areas:
+        "header header header header header"
+        "gallery gallery column1 column2 column3"
+        "gallery gallery column4 column4 column4"
+        "footer footer footer footer footer";
+    }
+}
+
+@media all and (max-width: 1000px) {
+    #content {
+        grid-template-areas:
+        "header header header header header header"
+        "column1 column1 column1 column2 column2 column2"
+        "column3 column3 column3 column4 column4 column4"
+        "gallery gallery gallery gallery gallery gallery"
+        "footer footer footer footer footer footer";
+    }
+}
+
+@media all and (max-width: 800px) {
+    #content {
+        grid-template-areas:
+        "header header header header header"
+        "column1 column1 column1 column1 column1"
+        "column2 column2 column2 column2 column2"
+        "column3 column3 column3 column3 column3"
+        "column4 column4 column4 column4 column4"
+        "gallery gallery gallery gallery gallery"
+        "footer footer footer footer footer";
+    }
+}

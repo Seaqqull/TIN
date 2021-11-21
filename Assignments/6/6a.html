@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="6a.js"></script>
+</head>
+<style>
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}
+
+form {
+    display: table;
+}
+
+div {
+    display: table-row;
+}
+</style>
+<body>
+    <form action="" method="get" id="celsius-to-fahrenheit">
+        <div>
+          <label for="celsius">Celsius: </label>
+          <input type="text" name="celsius" id="celsius" required>
+        </div>
+        <div>
+          <label for="fahrenheit">Fahrenheit: </label>
+          <input type="text" name="fahrenheit" id="fahrenheit" disabled>
+        </div>
+        <div>
+          <input type="submit" value="Convert">
+        </div>
+      </form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="6d.js"></script>
+</head>
+<style>
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}
+
+form {
+    display: table;
+}
+
+div {
+    display: table-row;
+}
+</style>
+<body>
+    <form action="" method="get" id="row-adder">
+        <div>
+          <label for="userText">Text: </label>
+          <input type="text" name="userText" id="userText" required>
+        </div>
+        <div>
+          <input type="submit" value="Add">
+        </div>
+    </form>
+
+    <table id="user-table">
+        <tr><td>Data 1</td></tr>
+        <tr><td>Data 2</td></tr>
+        <tr><td>Data 3</td></tr>
+    </table>
+</body>
+</html>

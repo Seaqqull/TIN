@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="6c.js"></script>
+</head>
+<style>
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}
+
+form {
+    display: table;
+}
+
+div {
+    display: table-row;
+}
+
+.wrong {
+    background-color: lightcoral;
+}
+</style>
+<body>
+    <form action="" method="get" id="validation-form">
+        <div id="age-field">
+          <label for="age">Age: </label>
+          <input type="number" name="age" id="age">
+        </div>
+        <div id="mail-field">
+          <label for="mail">E-mail: </label>
+          <input type="email" name="mail" id="mail">
+        </div>
+        <div>
+          <input type="submit" value="Check data">
+        </div>
+      </form>
+</body>
+</html>

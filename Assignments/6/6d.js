@@ -10,10 +10,10 @@ window.addEventListener( "load", function () {
         let newText = document.createTextNode(userText);
         newCell.appendChild(newText);
     }
-  
+
     const form = document.getElementById("row-adder");
     const table = document.getElementById("user-table");
-  
+
     form.addEventListener( "submit", function ( event ) {
         event.preventDefault();
 

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "fs.promises": "^0.1.2",
+    "http-server": "^14.0.0"
+  }
+}

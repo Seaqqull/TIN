@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task D</title>
+</head>
+<style>
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}
+
+form {
+    display: table;
+}
+
+div {
+    display: table-row;
+}
+</style>
+<body>
+    <form action="/jsondata" method="POST">
+        <div>
+          <label for="fName">First name: </label>
+          <input type="text" name="fName" id="fName" required>
+        </div>
+        <div>
+          <label for="lName">Last name: </label>
+          <input type="text" name="lName" id="lName" required>
+        </div>
+        <div>
+          <label for="age">Age: </label>
+          <input type="number" name="age" id="age" required>
+        </div>
+        <div>
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+</body>
+</html>

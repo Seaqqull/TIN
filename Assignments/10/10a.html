@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 10</title>
+</head>
+<style>
+  label, input {
+      display: table-cell;
+      margin-bottom: 10px;
+  }
+
+  label {
+      padding-right: 10px;
+  }
+
+  form {
+      display: table;
+  }
+
+  div {
+      display: table-row;
+  }
+  </style>
+<body>
+    <p>Temperatures:</p>
+    <form action="/jsonTemp" method="POST" id="operationTemp">
+        <div>
+            <label for="tValue">Value: </label>
+            <input type="number" name="tValue" id="tValue" required>
+        </div>
+        <div>
+            <label for="tUnit">Unit</label>
+            <select name="tUnit" id="tUnit">
+                <option value="F">F</option>
+                <option value="C">C</option>
+                <option value="K">K</option>
+            </select>
+        </div>
+        <div>
+            <input type="button" value="Submit" onclick="sendTemperature()">
+        </div>
+    </form>
+    <label id="tResult">Temp result:</label>
+
+    <p>Distances:</p>
+    <form action="/jsonTemp" method="POST" id="operationDist">
+        <div>
+            <label for="dValue">Value: </label>
+            <input type="number" name="dValue" id="dValue" required>
+        </div>
+        <div>
+            <label for="dUnit">Unit</label>
+            <select name="dUnit" id="dUnit">
+                <option value="KM">KM</option>
+                <option value="ML">ML</option>
+            </select>
+        </div>
+        <div>
+            <input type="button" value="Submit" onclick="sendDistance()">
+        </div>
+    </form>
+    <label id="dResult">Temp result:</label>
+
+
+    <script src="./10a.js"></script>
+</body>
+</html>

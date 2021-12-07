@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task A & B</title>
+</head>
+<style>
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}
+
+form {
+    display: table;
+}
+
+div {
+    display: table-row;
+}
+</style>
+<body>
+    <form action="/jsonOperation" method="POST" id="operationForm">
+        <div>
+          <label for="fNumber">First number: </label>
+          <input type="number" name="fNumber" id="fNumber" required>
+        </div>
+        <div>
+          <label for="sNumber">Second number: </label>
+          <input type="number" name="sNumber" id="sNumber" required>
+        </div>
+        <div>
+          <label for="operation">Operation: </label>
+          <input type="text" name="operation" id="operation" required>
+        </div>
+        <div>
+          <input type="button" value="Submit" onclick="sendRequest()">
+        </div>
+      </form>
+
+      <label id="result">Result:</label>
+
+      <script src="./9bRequest.js"></script>
+</body>
+</html>
